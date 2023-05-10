@@ -8,9 +8,6 @@ WHITE = (255, 255, 255)
 
 # funkcja obslugująca ruch komputera, zwwraca nową planszę
 def alphabeta(position, depth, max_player, game, alpha, beta):
-    # position == game.board
-    # if depth == 0 or position.winner(WHITE) is not None:
-    # TUTAJ NIE WIEM CZY GAME JEST OK ALE MOZE ZADZIALA W RAZIE CZEGO SPRAWDZ
     if depth == 0:
         return position.evaluate(position, game, max_player), position
 
